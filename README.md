@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# Formora Studio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Formora Studio**, a modern web development portfolio showcasing responsive, visually stunning, and performance-optimized websites.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+Check out the live site here: [Your Vercel Link](https://your-site.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠 Features
 
-### `npm test`
+- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile.  
+- **Interactive Animations** – Lottie animations, particles, and subtle UI transitions.  
+- **Core Values Section** – Highlights professionalism, creativity, goal orientation, and quality-first approach.  
+- **Testimonials Section** – Showcases client feedback dynamically.  
+- **Contact Form** – Integrated with EmailJS for seamless email submission.  
+- **WhatsApp Integration** – Floating button for instant messaging.  
+- **Pricing Table** – Provides average pricing, estimated delivery time, and free deployment included.  
+- **CTA Section** – Encourages visitors to start a project.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/formora-website.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+cd formora-website
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+npm install
 
-### `npm run eject`
+4. Start the server:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Contact Form
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The contact form uses EmailJS
+ for sending emails without a backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+💻 Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+React – Frontend library
 
-## Learn More
+TypeScript – Type safety
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+EmailJS – Contact form integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Vercel – Hosting & deployment
+
+CSS / Tailwind (if used) – Styling
+
+React Icons – Icons and illustrations
+
+Lottie – Animations
+
+📝 License
+
+This project is open source and available under the MIT License
+.
+
+🙌 Credits
+
+Formora Studio – Design & Development
+
+LottieFiles – Animations
+
+EmailJS – Contact form integration
