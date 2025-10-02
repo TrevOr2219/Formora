@@ -1,0 +1,91 @@
+/* Navbar base styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+  z-index: 1000;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Centered container inside navbar */
+nav .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+/* Navbar when scrolled: fade-in background & shadow */
+nav.scrolled {
+  background-color: rgba(60, 60, 60, 0.95);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  color: #eee;
+}
+
+/* When scrolled, make sure the container text color updates too */
+nav.scrolled .container {
+  color: #eee;
+}
+
+/* Logo styling */
+nav .container div.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: inherit;
+  cursor: default;
+}
+
+/* Links container */
+nav .container div.links a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: 500;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  font-size: 1.15rem;
+}
+
+/* Active and hover links */
+nav .container div.links a.active,
+nav .container div.links a:hover {
+  color: #5dade2;
+  
+  transform: scale(1.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo .phone {
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.logo .phone:hover {
+  color: #0ff;
+  cursor: pointer;
+}
+
+
+/* Hide desktop navbar on mobile */
+@media (max-width: 768px) {
+  .container {
+    display: none !important;
+  }
+}

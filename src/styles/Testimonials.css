@@ -1,0 +1,123 @@
+.testimonials {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 4rem auto; 
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+  border-radius: 16px;
+  background: radial-gradient(circle at 20% 30%, #0a0b1e, #101026 60%, #1c1b40 100%);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  height: 500px;
+}
+
+.galaxy-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.testimonial-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 12px rgba(255,255,255,0.2);
+}
+
+/* Cards */
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonial {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5), 0 0 12px rgba(255,255,255,0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-6px) scale(1.05) rotateZ(1deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6), 0 0 20px rgba(255,255,255,0.1);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ✅ Mobile fixes */
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    height: auto;
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .testimonial {
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+    padding: 0.8rem, 1rem;
+  }
+
+  .testimonial-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .testimonial-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}

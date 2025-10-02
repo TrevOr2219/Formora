@@ -1,0 +1,130 @@
+.workflow-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.workflow-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.workflow-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.workflow-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 260px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  border-radius: 1rem;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  filter: blur(40px);
+  border-radius: 1rem;
+}
+
+.card b {
+  position: absolute;
+  inset: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  border-radius: 0.8rem;
+}
+
+.icon-wrapper {
+  position: absolute;
+  z-index: 3;
+  opacity: 0.8;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.card:hover .icon-wrapper {
+  transform: translateY(-80px) scale(0.5);
+  opacity: 0.2;
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 30px;
+}
+
+.content .title {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.content .title span {
+  font-weight: 400;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 6px;
+}
+
+/* Wiggle animation */
+@keyframes wiggle {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-5px, 0) rotate(-5deg); }
+  50% { transform: translate(5px, 0) rotate(5deg); }
+  75% { transform: translate(-5px, 0) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.card.wiggle {
+  animation: wiggle 0.5s ease;
+}
+
+/* Hide workflow on mobile */
+@media (max-width: 768px) {
+  .workflow-section {
+    display: none;
+  }
+}

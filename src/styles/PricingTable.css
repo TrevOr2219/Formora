@@ -1,0 +1,90 @@
+.pricing-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.pricing-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffd369;
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pricing-card li {
+  margin: 0.4rem 0;
+}
+
+.pricing-note {
+  margin-top: 2rem;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pricing-card li {
+  margin: 0.4rem 0;
+}
+
+/* Style for Free Deployment line */
+.pricing-card li:last-child {
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #ffd369;
+}

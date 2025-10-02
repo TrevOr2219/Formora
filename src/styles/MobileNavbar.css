@@ -1,0 +1,83 @@
+/* Only show on small screens */
+@media (max-width: 768px) {
+  .mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 1100;
+  }
+
+  .navbar-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+  }
+
+  /* Dark overlay behind the drawer */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 900;
+  }
+
+  /* Drawer Menu */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-drawer.open {
+    left: 0;
+  }
+
+  .mobile-drawer a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+  }
+
+  .mobile-drawer a:hover {
+    background: #f5f5f5;
+  }
+}
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
