@@ -26,6 +26,7 @@ const App: React.FC = () => {
     <Router>
       <ScrollToTop />
       <PageDots />
+      <SpeedInsights />
       <div className="app-container">
         <Navbar />
         <MobileNavbar />
