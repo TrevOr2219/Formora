@@ -29,7 +29,9 @@
     "start": "react-scripts start --host 0.0.0.0",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "speed": "node scripts/speed-insights.js",
+    "vercel-build": "next build && npm run speed"
   },
   "eslintConfig": {
     "extends": [
