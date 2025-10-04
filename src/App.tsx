@@ -9,6 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import PageDots from './components/PageDots';
 import ScrollToTop from './components/ScrollToTop';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
