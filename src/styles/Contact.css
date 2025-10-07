@@ -246,7 +246,7 @@
 /* Show text when hovered */
 .whatsapp-float:hover .whatsapp-text {
   opacity: 1;
-  max-width: 220px;
+  max-width: 250px;
 }
 
 /* Pulse animation */
