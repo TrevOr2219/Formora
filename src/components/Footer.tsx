@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <div className="footer-links">
           <a href="/">Home</a>
           <a href="/services">Services</a>
-          <a href="/portfolio">Portfolio</a>
+          <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </div>
 
